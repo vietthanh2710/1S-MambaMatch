@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mambamatch"
+version = "0.1.0"
+description = "Refactored training code for 1-shot semi-supervised MambaMatch segmentation."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools]
+packages = ["datasets", "engine", "models", "utils", "scripts"]
+

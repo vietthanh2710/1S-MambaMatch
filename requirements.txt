@@ -1,0 +1,11 @@
+numpy
+pillow
+tqdm
+pyyaml
+scikit-learn
+
+torch
+torchvision
+timm
+segmentation-models-pytorch
+

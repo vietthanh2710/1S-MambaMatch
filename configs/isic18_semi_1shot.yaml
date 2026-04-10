@@ -1,0 +1,35 @@
+seed: 142
+device: "cuda"
+
+data:
+  # Expected npz format: keys "image" (N,H,W,3 uint8) and "mask" (N,H,W uint8)
+  npz_path: "data/ISIC2018_train.npz"
+  test_size: 520
+  labeled_count: 1037
+  num_workers: 4
+
+fewshot:
+  shot_num: 1
+  query_num_l: 4
+  query_num_u: 4
+
+train:
+  epochs: 150
+  lr: 5e-5
+  weight_decay: 0.01
+  scheduler:
+    factor: 0.6
+    patience: 9
+
+ema:
+  warmup_iters: 200
+  max_decay: 0.996
+
+loss:
+  unsup_tau: 0.4
+  loss_u_scale: 0.2
+
+output:
+  dir: "outputs"
+  save_prefix: "isic-50-1s"
+
