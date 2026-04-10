@@ -12,7 +12,7 @@ This is the official repository for the research "1S-MambaMatch: A Semi-supervis
 </p>
 
 <p align="center">
-  <em>Figure: Overview of the proposed 1S-MambaMatch framework.</em>
+  <em>Overview of the proposed 1S-MambaMatch framework.</em>
 </p>
 
 - Unified **one-shot + semi-supervised framework**
@@ -75,4 +75,3 @@ If you find this work useful, please consider citing:
   year    = {2026},
   publisher = {Elsevier}
 }
->>>>>>> 31d29bf (Code publish for 1S-MambaMatch)
